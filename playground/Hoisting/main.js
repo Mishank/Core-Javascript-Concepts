@@ -13,5 +13,8 @@ foo = 2;
 foo = 3;
 console.log(foo);
 var foo;
+
 foo();
 function foo() {}
+
+const a = 1;
