@@ -1,6 +1,7 @@
 const numbers = [1, 2];
 const append = (arr, el) => {
-  arr.push(el);
+  return [...arr, el];
+  // arr.push(el);
   return arr;
 };
 
