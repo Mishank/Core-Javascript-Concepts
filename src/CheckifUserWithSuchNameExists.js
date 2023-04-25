@@ -20,16 +20,17 @@ const users = [
 ];
 
 // const isNameExists = (name, users) => users.some((user) => user.name === name);
-const isNameExists = (name, users) => {
-  const index = users.findIndex((user) => user.name === name);
-  return index >= 0;
-};
 
 // const isNameExists = (name, users) => {
-//   let exists = false;
-//   for (let i = 0; i < users.length; i++) {
-//     if (users[i].name === name) {
-//       exists = true;
-//     }
-//   }
+//   const index = users.findIndex((user) => user.name === name);
+//   return index >= 0;
 // };
+
+const isNameExists = (name, users) => {
+  let exists = false;
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].name === name) {
+      exists = true;
+    }
+  }
+};
