@@ -22,6 +22,7 @@ class Item {
     function someFn() {
       console.log("this", this);
     }
+    someFn();
   }
 }
 

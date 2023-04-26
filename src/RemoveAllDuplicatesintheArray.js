@@ -17,3 +17,9 @@ const uniqueArr = (arr) => {
     return acc.includes(el) ? acc : [...acc, el];
   }, []);
 };
+
+// console.log(uniqueArr([{ a: 1 }, { a: 1 }]));
+// [{a:1}]
+
+console.log(uniqueArr([1, 1, 2]));
+//[1,2]
