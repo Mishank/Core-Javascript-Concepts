@@ -1,5 +1,6 @@
 class Employee {
   constructor(id, name) {
+    //конструктор
     if (!id || !name) {
       throw new Error("Employee id and name are mandatory");
     }
