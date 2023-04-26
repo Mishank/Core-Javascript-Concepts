@@ -2,7 +2,7 @@
 
 const { getName, getSurName, getFullname } = require("./common.js");
 console.log(
-  //   getName("Jack"),
-  //   getSurName("Sparrow"),
+  getName("Jack"),
+  getSurName("Sparrow"),
   getFullname("Jack", "Sparrow")
 );
