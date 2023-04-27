@@ -1,5 +1,5 @@
 const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://");
+xhr.open("GET", "https://github.com/Mishank/Core-Javascript-Concepts");
 xhr.send();
 
 xhr.onload = function () {
