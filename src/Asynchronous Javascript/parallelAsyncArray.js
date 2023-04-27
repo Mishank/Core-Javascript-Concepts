@@ -16,13 +16,9 @@ const asyncFunc3 = (callback) => {
   }, 1000);
 };
 
-asyncParallel([asyncFunc1, asyncFunc2, asyncFunc3], (result) => {
-  console.log(result);
-});
-
 asyncParallel = (asyncFuncs, callback) => {
   const resultArr = new Array(asyncFuncs.length);
-  const resultCounter = 0;
+  let resultCounter = 0;
 
   asyncFuncs.forEach((asyncFunc, index) => {
     asyncFunc(() => {
@@ -32,5 +28,8 @@ asyncParallel = (asyncFuncs, callback) => {
         callback(resultArr);
       }
     });
+  });
+  asyncParallel([asyncFunc1, asyncFunc2, asyncFunc3], (result) => {
+    console.log(result);
   });
 };
