@@ -28,3 +28,5 @@ const shallowCompare = (source, target) => {
   }
   return source === target;
 };
+
+//shallow more faster then dip check every single value
